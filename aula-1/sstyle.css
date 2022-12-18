@@ -1,0 +1,23 @@
+.t1 {
+  animation: pisca 6s infinite;
+}
+
+@keyframes pisca {
+  0% { color: blue;}
+  10% { color: yellow;}
+  15% { color: green;}
+  20% { color: red;}
+  25% { color: orange;}
+  35% { color: rgb(70, 3, 3);}
+  40% { color: gray;}
+  45% { color: pink;}
+  50% { color: violet;}
+  60% { color: rgb(17, 97, 107);}
+  65% { color: rgb(0, 255, 128);}
+  70% { color: rgb(208, 255, 0);}
+  75% { color: rgb(255, 123, 0);}
+  85% { color: rgb(255, 0, 64);}
+  90% { color: rgb(0, 81, 255);}
+  95% { color: rgb(30, 255, 0);}
+  100% { color: rgb(255, 30, 0);}
+}
