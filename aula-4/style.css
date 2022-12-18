@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #3D8361;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+
+    width: 80%;
+}
+
+.header {
+    background-color: #0F3460;
+    color: #D6CDA4;
+
+    padding: 10px 0 15px 0;
+}
+
+.header-title,
+.header-subtitle {
+    text-align: center;
+}
+
+.header-subtitle {
+    color: #5CB8E4;
+}
+
+.sumario {
+    background-color: #0F3460;
+    color: #f2d5cc;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.sumario-title {
+    font-size: 26px;
+    text-align: center;
+}
+
+.back-to-top {
+    background-color: #38322e;
+    border-radius: 65px;
+    bottom: 14px;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+    color: #d9a000;
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 22px;
+    width: 40px;
+    z-index: 3;
+
+}
+.back-to-top::after {
+      content: '▲';
+      display: flex;
+      justify-content: center;
+      padding-left: 1px;
+      padding-top: 10px;
+    }
+
+
+ol {
+    list-style-position: inside;
+    text-align: center;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+a {
+    color: #DDD;
+    text-decoration: none;
+}
+
+a:link {
+    color: #DDD;
+}
+
+a:visited {
+    color: #765e9c;
+}
+
+a:hover {
+    color: #765e9c;
+}
+
+a:active {
+    color: #5f2f8d;
+}
+
+.book-one,
+.book-two,
+.book-three,
+.book-four,
+.book-five {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section {
+    margin: 10px 0 10px 0;
+}
+
+#l1, #l3, #l5 {
+    background-color: #765e9c;
+    border-radius: 15px;
+}
+
+.book-title {
+    color: #040404;
+}
+
+.book-img {
+    width: 25%;
+    display: block;
+    border-radius: 20px;
+}
+
+.book-title,
+.book-sinopse,
+.book-fonte,
+.book-table {
+    text-align: center;
+}
+
+.book-text {
+    background-color: #0F3460;
+    padding: 10px 20px 10px 20px;
+    text-indent: 15px;
+}
+
+.book-fonte {
+    padding-top: 8px;
+}
+
+.book-table {
+    padding-top: 10px;
+    margin: auto;
+}
+
+td {
+    background-color: #7e7d7d;
+}
+
+th {
+    background-color: #033C7F;
+}
+
+td, th {
+    border-width: 1px;
+    border-style: solid ;
+    border-color: #F2E7DC;
+    
+    padding: 8px;
+}
+
+td:hover, th:hover{
+    border-radius: 10px;
+}
+
+span {
+    color: #35bbbb;
+}
