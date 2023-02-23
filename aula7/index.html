@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atividade 7</title>
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .card {
+            display: grid;
+            margin: 0 auto;
+            justify-content: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        button {
+            display: grid;
+            margin: 10px auto;
+            text-align: center;
+            font-size: 16px;
+            color: #F14E32;
+            background: rgb(245, 240, 240);
+            border: 1px solid rgb(236, 232, 232);
+            border-radius: 12px;
+            padding: 6px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="center">A importância do Git</h2>
+
+    <div class="card">
+        <img src="https://miro.medium.com/max/800/1*t7vaxPRHZoqCWtmqYtGRqQ.png" alt="Git" style="width:100%">
+        <div class="container">
+            <button>Saber Mais</button>
+            <p>O Git é essencial em quase todos os projetos realizados em equipes que geralmente trabalham em paralelo. Isso porque ele evita que haja conflitos entre as alterações realizadas. Como os projetos costumam estar em constante evolução, é comum ocorrer alterações que possam causar problemas no funcionamento deles. Nesse caso, o Git permite que tais alterações sejam revertidas de maneira simples e rápida, voltando a versão antiga do projeto. Atualmente, o Git é utilizado de forma tão ampla que ter conhecimento sobre ele é praticamente obrigatório para qualquer oportunidade de emprego envolvendo a área de desenvolvimento.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const btnSaberMais = document.querySelector("button");
+        const texto = document.querySelector("p");
+
+        texto.style.display = "none";
+
+        btnSaberMais.addEventListener("click", () => {
+            if (texto.style.display === "none"){
+                texto.style.display = "block";
+                btnSaberMais.innerHTML = "Fechar";
+            } else {
+                texto.style.display = "none";
+                btnSaberMais.innerHTML = "Saber Mais";
+            }
+        })
+    </script>
+
+</body>
+
+</html>

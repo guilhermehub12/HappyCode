@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 1.05em;
+        }
+
+        body {
+            background-color: rgb(122, 117, 117);
+        }
+
+        tr,
+        td {
+            text-align: center;
+        }
+
+        .card {
+            display: grid;
+            margin: 0 auto;
+        }
+
+        .table {
+            background-color: green;
+        }
+
+        .thead {
+            background-color: yellow;
+        }
+
+        .tbody {
+            background-color: lightblue;
+        }
+
+        .btn {
+            background: rgb(245, 32, 32);
+            color: #FFFFFF;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <table class="table">
+            <thead class="thead">
+                <th scope="col">Cálculos</th>
+                <th scope="col">Botão</th>
+                <th scope="col">Resultados</th>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td>6 + 20 - 12 x 2</td>
+                    <td><input type="button" value="Ver Resultado" class="btn" /></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>30 ÷ [10 + (2 + 3)]</td>
+                    <td><input type="button" value="Ver Resultado" class="btn" /></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>[(18 + 3 · 2) ÷ 8 + 5 · 3] ÷ 6</td>
+                    <td><input type="button" value="Ver Resultado" class="btn" /></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>[(64 - 16·4) + (48·10 - 180)]·5</td>
+                    <td><input type="button" value="Ver Resultado" class="btn" /></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>{[(8 · 4 + 3) ÷ 7 + (3 + 15 ÷ 5) · 3] · 2 - (19 - 7) ÷ 6} · 2 + 12</td>
+                    <td><input type="button" value="Ver Resultado" class="btn" /></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const btn1 = document.querySelector("input");
+        btn1.addEventListener('click', () => {
+            let result1 = document.querySelector(".tbody tr td:nth-child(3)");
+            let calc1 = 6 + 20 - 12 * 2;
+            btn1.value === 'Ver Resultado' ? (
+                result1.innerHTML = calc1,
+                btn1.value = 'Ocultar Resultado'
+            ) : (
+                result1.innerHTML = '',
+                btn1.value = 'Ver Resultado'
+            );
+
+        })
+
+        const btn2 = document.querySelector("input:nth-child(2)");
+        btn2.addEventListener('click', () => {
+            let result2 = document.querySelector(".tbody tr:nth-child(2) td:nth-child(3)");
+            let calc2 = 30 / (10 + (2 + 3));
+            btn2.value === 'Ver Resultado' ? (
+                result2.innerHTML += calc2,
+                btn2.value = "Ocultar Resultado"
+            ) : (
+                result1.innerHTML = '',
+                btn1.value = "Ver Resultado"
+            )
+        })
+
+        let result3 = document.querySelector(".tbody tr:nth-child(3) td:nth-child(3)");
+        let calc3 = ((18 + 3 * 2) / 8 + 5 * 3) / 6;
+        result3.innerHTML += calc3;
+
+        let result4 = document.querySelector(".tbody tr:nth-child(4) td:nth-child(3)");
+        let calc4 = ((64 - 16 * 4) + (48 * 10 - 180)) * 5;
+        result4.innerHTML += calc4;
+
+        let result5 = document.querySelector(".tbody tr:nth-child(5) td:nth-child(3)");
+        let calc5 = (((8 * 4 + 3) / 7 + (3 + 15 / 5) * 3) * 2 - (19 - 7) / 6) * 2 + 12;
+        result5.innerHTML += calc5;
+    </script>
+
+</body>
+
+</html>
