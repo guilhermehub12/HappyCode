@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-main: #746BEB;
+    --white: #FFFFFF;
+    --yellow: #FFC700;
+    --light-green: #61FF00;
+    --dark-green: #7FBC8C;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-main);
+    background-image: url("../assets/img/Grid.svg");
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white) !important;
+}
+
+a[type="button"] {
+    background-color: var(--dark-green);
+    padding: 10px;
+}

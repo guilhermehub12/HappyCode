@@ -1,0 +1,99 @@
+.contato_title {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.contato_title>h1 {
+    color: var(--yellow);
+    font-weight: 700;
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form_contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    height: 30em;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form_contact_number {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 5px;
+    border: 4px solid #0f0f0f;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+    background-color: var(--white);
+}
+
+.form_contact_number_info>h4 {
+    font-size: 1em;
+    opacity: .6;
+}
+
+.form_contact_number_info>p {
+    font-size: 1em;
+}
+
+
+
+.form_contact_form>input,
+.form_contact_form>textarea {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    border-radius: 8px;
+    box-shadow: 0px 30px 116px -16px rgba(211, 211, 211, 0.20000000298023224);
+    padding: 15px 24px;
+    border: 4px solid #0f0f0f;
+    background-color: var(--white);
+    color: #92929d;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form_contact_form>input:nth-child(4) {
+    height: 200px;
+}
+
+.form_contact_button {
+    display: flex;
+    justify-content: end;
+}
+
+.form_contact_button>button {
+    background-color: var(--dark-green);
+    border: 4px solid #0f0f0f;
+    width: 120px;
+    height: 55px;
+
+    color: var(--white);
+    font-weight: 600;
+    -webkit-box-shadow: 26px 31px 35px -28px rgba(15, 15, 15, 0.5);
+    -moz-box-shadow: 26px 31px 35px -28px rgba(15, 15, 15, 0.5);
+    box-shadow: 26px 31px 35px -28px rgba(15, 15, 15, 0.5);
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+    filter: drop-shadow(5px 4px 0px #000000);
+}

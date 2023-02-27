@@ -1,0 +1,32 @@
+.nav_fixed {
+    top: 0;
+    position: fixed;
+    background-color: #fafafa;
+    z-index: 999;
+}
+
+.nav_sticky {
+    position: sticky;
+    z-index: 999;
+}
+
+.toggle {
+    background-color: #7FBC8C;
+}
+
+.toggle {
+    color: #fff;
+}
+
+.offcanva {
+    background-color: #fafafa;
+}
+
+.nav_texto {
+    font-weight: 600;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}

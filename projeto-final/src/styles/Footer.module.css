@@ -1,0 +1,22 @@
+.footer {
+    background-image: url("../assets/img/bgFooter.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -15px;
+}
+
+.footer_line {
+    width: auto;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.footer_container > p {
+    color: var(--white);
+}
